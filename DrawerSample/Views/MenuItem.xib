@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuItem" customModule="DrawerSample" customModuleProvider="target">
+            <connections>
+                <outlet property="banLabel" destination="0iD-uW-2Af" id="G4s-in-zP8"/>
+                <outlet property="nicknameLabel" destination="toH-7W-NIk" id="ZVs-J9-tjb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlU-e4-oV3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <connections>
+                        <action selector="itemSelected:" destination="-1" eventType="touchUpInside" id="Wjm-7z-iEx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ban" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iD-uW-2Af">
+                    <rect key="frame" x="66" y="30" width="30" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nickname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toH-7W-NIk">
+                    <rect key="frame" x="66" y="6" width="77" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLU-g2-c5J">
+                    <rect key="frame" x="16" y="10" width="40" height="40"/>
+                    <color key="backgroundColor" red="0.3803921569" green="0.25882352939999997" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="V0g-Sl-MB8"/>
+                        <constraint firstAttribute="width" constant="40" id="thK-80-j4w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="toH-7W-NIk" firstAttribute="top" secondItem="aLU-g2-c5J" secondAttribute="top" constant="-4" id="L2v-qx-Y6c"/>
+                <constraint firstItem="aLU-g2-c5J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="X6g-Zi-6yZ"/>
+                <constraint firstItem="dlU-e4-oV3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bNA-QS-f7z"/>
+                <constraint firstItem="dlU-e4-oV3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="coY-4X-Aq2"/>
+                <constraint firstItem="toH-7W-NIk" firstAttribute="leading" secondItem="aLU-g2-c5J" secondAttribute="trailing" priority="999" constant="10" id="i3i-PA-Y7m"/>
+                <constraint firstItem="0iD-uW-2Af" firstAttribute="leading" secondItem="toH-7W-NIk" secondAttribute="leading" id="jq2-mu-SD6"/>
+                <constraint firstItem="0iD-uW-2Af" firstAttribute="top" secondItem="toH-7W-NIk" secondAttribute="bottom" constant="3" id="lb2-fk-VDo"/>
+                <constraint firstItem="aLU-g2-c5J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" priority="999" constant="16" id="osw-e4-S4w"/>
+                <constraint firstAttribute="bottom" secondItem="dlU-e4-oV3" secondAttribute="bottom" id="pJT-sn-xal"/>
+                <constraint firstAttribute="trailing" secondItem="dlU-e4-oV3" secondAttribute="trailing" id="x1x-WJ-kfM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="31" y="33"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,195 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Account"
+- "AccountController"
+provides-nominal:
+- "C12DrawerSample7Account"
+- "C12DrawerSample17AccountController"
+provides-member:
+- ["C12DrawerSample7Account", ""]
+- ["C12DrawerSample17AccountController", ""]
+provides-dynamic-lookup:
+- "viewDidLoad"
+depends-top-level:
+- "AssignmentPrecedence"
+- "String"
+- "AccountController"
+- "Account"
+- "UITabBarController"
+- "UIViewController"
+- !private "BooleanLiteralType"
+depends-member:
+- ["C12DrawerSample7Account", "String"]
+- ["C12DrawerSample7Account", "ban"]
+- ["C12DrawerSample7Account", "deinit"]
+- ["C12DrawerSample7Account", "init"]
+- ["C12DrawerSample7Account", "name"]
+- ["C12DrawerSample17AccountController", "Account"]
+- ["C12DrawerSample17AccountController", "UIViewController"]
+- ["C12DrawerSample17AccountController", "account"]
+- ["C12DrawerSample17AccountController", "deinit"]
+- ["C12DrawerSample17AccountController", "init"]
+- !private ["C12DrawerSample17AccountController", "setViewControllers"]
+- ["C12DrawerSample17AccountController", "viewDidLoad"]
+- ["Ps9AnyObject", "account"]
+- !private ["Ps9AnyObject", "ban"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "name"]
+- !private ["Ps9AnyObject", "setViewControllers"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- ["Sa", "deinit"]
+- ["Sb", "deinit"]
+- ["Ps7CVarArg", "account"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "setViewControllers"]
+- ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- ["Ps28CustomDebugStringConvertible", "account"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "setViewControllers"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "account"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "setViewControllers"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "account"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "setViewControllers"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "account"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "setViewControllers"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- ["CSo7NSCoder", "deinit"]
+- ["PSo8NSCoding", "account"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "setViewControllers"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "account"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "setViewControllers"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "Account"]
+- ["CSo8NSObject", "UIViewController"]
+- ["CSo8NSObject", "account"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "setViewControllers"]
+- ["CSo8NSObject", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", "account"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "setViewControllers"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- ["Sq", "deinit"]
+- ["SS", "deinit"]
+- ["PSo21UIAppearanceContainer", "account"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "setViewControllers"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "account"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "setViewControllers"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "account"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "setViewControllers"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "Account"]
+- ["CSo11UIResponder", "UIViewController"]
+- ["CSo11UIResponder", "account"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "setViewControllers"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", "account"]
+- ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "setViewControllers"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- ["PSo16UIStateRestoring", "account"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "setViewControllers"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["CSo18UITabBarController", "Account"]
+- ["CSo18UITabBarController", "UIViewController"]
+- ["CSo18UITabBarController", "account"]
+- ["CSo18UITabBarController", "deinit"]
+- ["CSo18UITabBarController", "init"]
+- !private ["CSo18UITabBarController", "setViewControllers"]
+- ["CSo18UITabBarController", "viewDidLoad"]
+- ["CSo18UITabBarController", ""]
+- ["PSo16UITabBarDelegate", "account"]
+- ["PSo16UITabBarDelegate", "init"]
+- !private ["PSo16UITabBarDelegate", "setViewControllers"]
+- ["PSo16UITabBarDelegate", "viewDidLoad"]
+- ["PSo16UITabBarDelegate", ""]
+- ["PSo18UITraitEnvironment", "account"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "setViewControllers"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "Account"]
+- ["CSo16UIViewController", "UIViewController"]
+- ["CSo16UIViewController", "account"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "setViewControllers"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["Ps9_Hashable", "account"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "setViewControllers"]
+- ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+depends-nominal:
+- "C12DrawerSample7Account"
+- "C12DrawerSample17AccountController"
+- "Ps9AnyObject"
+- "Sa"
+- "Sb"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "SQ"
+- "CSo7NSCoder"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "Sq"
+- "SS"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- "PSo16UIStateRestoring"
+- "CSo18UITabBarController"
+- "PSo16UITabBarDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "d55b3710679efc9a5638976ffc277eef"

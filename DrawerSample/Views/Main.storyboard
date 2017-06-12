@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fQY-zP-w7Q">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drawer Coordinator Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DrawerCoordinatorController" customModule="DrawerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4o-iz-wcP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </containerView>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="X4o-iz-wcP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9PG-FA-VqG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X4o-iz-wcP" secondAttribute="bottom" id="IGv-O2-eQe"/>
+                            <constraint firstAttribute="trailing" secondItem="X4o-iz-wcP" secondAttribute="trailing" id="Mk6-tq-nb6"/>
+                            <constraint firstItem="X4o-iz-wcP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="xl7-vR-aoj"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wqN-Ni-txn">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="RH0-Yy-aBL">
+                            <view key="customView" contentMode="scaleToFill" id="cO8-8k-GQE">
+                                <rect key="frame" x="16" y="5" width="83" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9m7-OL-p5H">
+                                        <rect key="frame" x="41" y="6" width="33.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrI-0M-iT3">
+                                        <rect key="frame" x="8" y="4" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="mML-r7-pK9"/>
+                                            <constraint firstAttribute="height" constant="25" id="vIt-dD-JMg"/>
+                                        </constraints>
+                                        <state key="normal" title="Open" image="burgerIcon"/>
+                                        <connections>
+                                            <action selector="openDrawer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPH-Cd-stO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="9m7-OL-p5H" firstAttribute="centerY" secondItem="CrI-0M-iT3" secondAttribute="centerY" id="1tY-UI-A5C"/>
+                                    <constraint firstItem="CrI-0M-iT3" firstAttribute="leading" secondItem="cO8-8k-GQE" secondAttribute="leading" constant="8" id="IWj-rL-AKb"/>
+                                    <constraint firstItem="CrI-0M-iT3" firstAttribute="top" secondItem="cO8-8k-GQE" secondAttribute="top" constant="4" id="pK8-U0-uB2"/>
+                                    <constraint firstItem="9m7-OL-p5H" firstAttribute="leading" secondItem="CrI-0M-iT3" secondAttribute="trailing" constant="8" id="plE-Vy-qQd"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="X4o-iz-wcP" id="N8t-gp-rem"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="373.60000000000002" y="-179.46026986506749"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gIw-Jr-a8n">
+            <objects>
+                <navigationController id="fQY-zP-w7Q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Il1-dU-IOt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rkS-v0-L7R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XaK-AD-kBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="-179"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="burgerIcon" width="512" height="512"/>
+    </resources>
+</document>

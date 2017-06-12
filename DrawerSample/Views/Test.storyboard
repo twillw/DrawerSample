@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fQe-Hn-3sK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Test Controller-->
+        <scene sceneID="Scg-XZ-D9Q">
+            <objects>
+                <viewController id="fQe-Hn-3sK" customClass="TestController" customModule="DrawerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6GE-Au-6ax"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wgx-H9-Zy3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="die-W3-xgg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeL-dd-7li">
+                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7843137255" green="0.6588235294" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NeL-dd-7li" firstAttribute="top" secondItem="6GE-Au-6ax" secondAttribute="bottom" constant="8" id="IUm-g5-Ykh"/>
+                            <constraint firstAttribute="trailing" secondItem="NeL-dd-7li" secondAttribute="trailing" constant="16" id="JPF-dc-wSh"/>
+                            <constraint firstItem="NeL-dd-7li" firstAttribute="leading" secondItem="die-W3-xgg" secondAttribute="leading" constant="16" id="hgQ-5H-vDo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="NeL-dd-7li" id="NSF-Q3-Yey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Shh-oO-zwS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="162.3688155922039"/>
+        </scene>
+    </scenes>
+</document>

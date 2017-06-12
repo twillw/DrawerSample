@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "cfac908806bdba5e932daf7c9e1b60ed"
+build_time: [550606686, 91447000]
+inputs:
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/AppDelegate.swift": [550006784, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/DrawerMenu.swift": [550178626, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/CustomView.swift": [550161829, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/TestController.swift": [550591813, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/MenuItem.swift": [550178616, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/DrawerCoordinatorController.swift": [550606683, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/AccountController.swift": [550606430, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/ViewPagerController.swift": [550350885, 0]
