@@ -121,16 +121,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class UIViewController;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12DrawerSample17AccountController")
 @interface AccountController : UITabBarController
-- (nonnull instancetype)initWithControllers:(NSArray<UIViewController *> * _Nonnull)controllers;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12DrawerSample10CustomView")
+@interface CustomView : UIView
+- (nonnull instancetype)initWithViewName:(NSString * _Nonnull)viewName frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithViewName:(NSString * _Nonnull)viewName coder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)onBindViewWithView:(UIView * _Nonnull)view;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+@class UILabel;
+
+SWIFT_CLASS("_TtC12DrawerSample15AccountMenuItem")
+@interface AccountMenuItem : CustomView
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ViewName;)
++ (NSString * _Nonnull)ViewName;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGRect DefaultFrame;)
++ (CGRect)DefaultFrame;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nicknameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified banLabel;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (IBAction)itemSelected:(id _Nonnull)sender;
+- (nonnull instancetype)initWithViewName:(NSString * _Nonnull)viewName frame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithViewName:(NSString * _Nonnull)viewName coder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
 
 @class UIWindow;
@@ -148,15 +172,6 @@ SWIFT_CLASS("_TtC12DrawerSample11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC12DrawerSample10CustomView")
-@interface CustomView : UIView
-- (nonnull instancetype)initWithViewName:(NSString * _Nonnull)viewName frame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithViewName:(NSString * _Nonnull)viewName coder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)onBindViewWithView:(UIView * _Nonnull)view;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
 
 @class UITapGestureRecognizer;
 @class UIGestureRecognizer;
@@ -187,22 +202,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGRect DefaultFrame;
 - (nullable instancetype)initWithViewName:(NSString * _Nonnull)viewName coder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
 @end
 
-@class UILabel;
 
-SWIFT_CLASS("_TtC12DrawerSample8MenuItem")
-@interface MenuItem : CustomView
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ViewName;)
-+ (NSString * _Nonnull)ViewName;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGRect DefaultFrame;)
-+ (CGRect)DefaultFrame;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nicknameLabel;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified banLabel;
-- (nonnull instancetype)initWithNickname:(NSString * _Nonnull)nickname andBan:(NSString * _Nonnull)ban itemIndex:(NSInteger)itemIndex action:(void (^ _Nullable)(NSInteger))onItemSelected OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC12DrawerSample23HomeSolutionsController")
+@interface HomeSolutionsController : AccountController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)onBindViewWithView:(UIView * _Nonnull)view;
-- (IBAction)itemSelected:(id _Nonnull)sender;
-- (nonnull instancetype)initWithViewName:(NSString * _Nonnull)viewName frame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithViewName:(NSString * _Nonnull)viewName coder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC12DrawerSample18MobilityController")
+@interface MobilityController : AccountController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

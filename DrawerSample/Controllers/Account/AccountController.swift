@@ -1,14 +1,22 @@
 
 import UIKit
 
+internal enum AccountType {
+    case Mobility
+    case HomeSolutions
+}
+
 
 internal class Account {
+    
     internal let ban: String
     internal let name: String
+    internal let type: AccountType
     
-    internal init(ban: String, name: String) {
+    internal init(ban: String, name: String, type: AccountType) {
         self.ban = ban
         self.name = name
+        self.type = type
     }
 }
 
@@ -21,13 +29,10 @@ internal class AccountController: UITabBarController {
     
     // MARK: constructors
     
-    internal convenience init(controllers: [UIViewController]) {
+    internal convenience init(account: Account) {
         
         // call designated initializer
         self.init()
-        
-        // set instance variables
-        self.setViewControllers(controllers, animated: false)
     }
     
     

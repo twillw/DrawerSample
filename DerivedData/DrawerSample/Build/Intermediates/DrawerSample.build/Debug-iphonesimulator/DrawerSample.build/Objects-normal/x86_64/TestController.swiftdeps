@@ -6,15 +6,15 @@ provides-nominal:
 provides-member:
 - ["C12DrawerSample14TestController", ""]
 provides-dynamic-lookup:
+- "labelText"
 - "viewDidLoad"
 - "label"
-- "labelText"
 depends-top-level:
+- "AssignmentPrecedence"
 - "UIViewController"
+- "UILabel"
 - "TestController"
 - "String"
-- "UILabel"
-- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "label"]

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AccountMenuItem.nib</key>
+		<data>
+		vaTmb99vsQOprW1UsU3j3et2ej8=
+		</data>
 		<key>Assets.car</key>
 		<data>
 		CJeqSf1FML5Dh21e8POaNWVV+Zc=
@@ -80,10 +84,6 @@
 		<data>
 		YQVlNJ0FtlprdWEU2P99j2vddW8=
 		</data>
-		<key>MenuItem.nib</key>
-		<data>
-		zhxIcKm2g5mgQFusFHI6E5/ec/Y=
-		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -94,11 +94,11 @@
 		</data>
 		<key>Test.storyboardc/UIViewController-fQe-Hn-3sK.nib</key>
 		<data>
-		zbFTh2aNBLqoNyjBVqrjtMg72E0=
+		fn+hVHi+fSy8s3e6IqdADUBrGkQ=
 		</data>
 		<key>Test.storyboardc/fQe-Hn-3sK-view-die-W3-xgg.nib</key>
 		<data>
-		OoIeK46UamXV6ZauQHUsSXA0Xys=
+		nc7qp+TcuBVcgswo1SI98WlSffI=
 		</data>
 		<key>ViewPager.storyboardc/Info.plist</key>
 		<data>
@@ -119,6 +119,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AccountMenuItem.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vaTmb99vsQOprW1UsU3j3et2ej8=
+			</data>
+			<key>hash2</key>
+			<data>
+			UTN4lXchC8nJZ/okgKTMQISqoaQ0HZt8KdijXmG+CWw=
+			</data>
+		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash</key>
@@ -317,17 +328,6 @@
 			W2B+wW9LLxujJiC7WfIbMOREgbWteZmZmHJv+F9/Xpk=
 			</data>
 		</dict>
-		<key>MenuItem.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zhxIcKm2g5mgQFusFHI6E5/ec/Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			jU3Ssc1ZX4e2gnUQNv7bMkN14+d0qJg2Kb1ApcQuXcE=
-			</data>
-		</dict>
 		<key>Test.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
@@ -343,22 +343,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zbFTh2aNBLqoNyjBVqrjtMg72E0=
+			fn+hVHi+fSy8s3e6IqdADUBrGkQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BQRw6jWKMTsYOW01p5C2kgVpvHv186TjS09muB0tExk=
+			CUmRkcQw4Ge3dzd+L1Q8FzWwMAQI2kZqDDoOU4BXc3Q=
 			</data>
 		</dict>
 		<key>Test.storyboardc/fQe-Hn-3sK-view-die-W3-xgg.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OoIeK46UamXV6ZauQHUsSXA0Xys=
+			nc7qp+TcuBVcgswo1SI98WlSffI=
 			</data>
 			<key>hash2</key>
 			<data>
-			S+NdwOKNiHvkOUloKs7J/z19C1888x8WfR9Q6iHUkLs=
+			u356JiEp+XW+1A435eBFPU0t36TfefNcMN5pfPztG6M=
 			</data>
 		</dict>
 		<key>ViewPager.storyboardc/Info.plist</key>

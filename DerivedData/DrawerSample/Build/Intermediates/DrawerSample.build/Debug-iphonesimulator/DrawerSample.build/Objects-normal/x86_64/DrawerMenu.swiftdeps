@@ -7,40 +7,40 @@ provides-member:
 - ["C12DrawerSample10DrawerMenu", ""]
 provides-dynamic-lookup:
 - "ViewName"
-- "DefaultFrame"
 - "menuItemContainer"
+- "DefaultFrame"
 depends-top-level:
 - !private "MenuItem"
-- "CustomView"
-- "StringLiteralType"
 - !private "BooleanLiteralType"
-- "NSCoder"
+- "CustomView"
+- "DrawerMenu"
+- "StringLiteralType"
+- "Void"
+- "MenuItemType"
+- "CastingPrecedence"
+- !private "AccountMenuItem"
 - !private "NSLayoutConstraint"
-- "Int"
+- "AssignmentPrecedence"
+- "NSCoder"
+- !private "Array"
 - "UIView"
 - "Account"
 - "CGRect"
-- "DrawerMenu"
-- !private "Array"
-- "Void"
-- "AssignmentPrecedence"
 depends-member:
-- !private ["C12DrawerSample7Account", "ban"]
 - ["C12DrawerSample7Account", "deinit"]
-- !private ["C12DrawerSample7Account", "name"]
+- ["C12DrawerSample15AccountMenuItem", "deinit"]
+- !private ["C12DrawerSample15AccountMenuItem", "init"]
+- !private ["Ps9AnyObject", "AccountMenuItem"]
 - ["Ps9AnyObject", "CGRect"]
 - ["Ps9AnyObject", "DefaultFrame"]
 - !private ["Ps9AnyObject", "DrawerMenu"]
-- !private ["Ps9AnyObject", "MenuItem"]
 - !private ["Ps9AnyObject", "NSLayoutConstraint"]
 - ["Ps9AnyObject", "ViewName"]
 - !private ["Ps9AnyObject", "addConstraints"]
 - ["Ps9AnyObject", "addMenuItem"]
 - !private ["Ps9AnyObject", "addSubview"]
-- !private ["Ps9AnyObject", "ban"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "menuItemContainer"]
-- !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "subviews"]
 - !private ["Ps9AnyObject", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps9AnyObject", ""]
@@ -58,10 +58,10 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps22BidirectionalIndexable", "last"]
 - ["Sb", "deinit"]
+- !private ["PSo15CALayerDelegate", "AccountMenuItem"]
 - ["PSo15CALayerDelegate", "CGRect"]
 - ["PSo15CALayerDelegate", "DefaultFrame"]
 - !private ["PSo15CALayerDelegate", "DrawerMenu"]
-- !private ["PSo15CALayerDelegate", "MenuItem"]
 - !private ["PSo15CALayerDelegate", "NSLayoutConstraint"]
 - ["PSo15CALayerDelegate", "ViewName"]
 - !private ["PSo15CALayerDelegate", "addConstraints"]
@@ -75,12 +75,12 @@ depends-member:
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC6CGRect", "deinit"]
 - ["VSC6CGRect", "init"]
+- !private ["Ps7CVarArg", "AccountMenuItem"]
 - ["Ps7CVarArg", "CGRect"]
 - ["Ps7CVarArg", "DefaultFrame"]
 - !private ["Ps7CVarArg", "DrawerMenu"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "MenuItem"]
 - !private ["Ps7CVarArg", "NSLayoutConstraint"]
 - ["Ps7CVarArg", "ViewName"]
 - !private ["Ps7CVarArg", "_Element"]
@@ -93,18 +93,17 @@ depends-member:
 - !private ["Ps7CVarArg", "subviews"]
 - !private ["Ps7CVarArg", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps7CVarArg", ""]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "last"]
 - ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "AccountMenuItem"]
 - ["Ps28CustomDebugStringConvertible", "CGRect"]
 - ["Ps28CustomDebugStringConvertible", "DefaultFrame"]
 - !private ["Ps28CustomDebugStringConvertible", "DrawerMenu"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "MenuItem"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLayoutConstraint"]
 - ["Ps28CustomDebugStringConvertible", "ViewName"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
@@ -123,12 +122,12 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_Element"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "last"]
+- !private ["Ps23CustomStringConvertible", "AccountMenuItem"]
 - ["Ps23CustomStringConvertible", "CGRect"]
 - ["Ps23CustomStringConvertible", "DefaultFrame"]
 - !private ["Ps23CustomStringConvertible", "DrawerMenu"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "MenuItem"]
 - !private ["Ps23CustomStringConvertible", "NSLayoutConstraint"]
 - ["Ps23CustomStringConvertible", "ViewName"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
@@ -142,11 +141,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "translatesAutoresizingMaskIntoConstraints"]
 - ["Ps23CustomStringConvertible", ""]
 - ["C12DrawerSample10CustomView", "Account"]
+- !private ["C12DrawerSample10CustomView", "AccountMenuItem"]
 - ["C12DrawerSample10CustomView", "CGRect"]
 - ["C12DrawerSample10CustomView", "DefaultFrame"]
 - !private ["C12DrawerSample10CustomView", "DrawerMenu"]
-- ["C12DrawerSample10CustomView", "Int"]
 - !private ["C12DrawerSample10CustomView", "MenuItem"]
+- ["C12DrawerSample10CustomView", "MenuItemType"]
 - ["C12DrawerSample10CustomView", "NSCoder"]
 - !private ["C12DrawerSample10CustomView", "NSLayoutConstraint"]
 - ["C12DrawerSample10CustomView", "UIView"]
@@ -156,15 +156,14 @@ depends-member:
 - ["C12DrawerSample10CustomView", "deinit"]
 - ["C12DrawerSample10CustomView", "init"]
 - ["C12DrawerSample10CustomView", "menuItemContainer"]
-- !private ["C12DrawerSample10CustomView", "translatesAutoresizingMaskIntoConstraints"]
 - ["C12DrawerSample10CustomView", ""]
-- !private ["Sd", "deinit"]
 - ["C12DrawerSample10DrawerMenu", "Account"]
+- !private ["C12DrawerSample10DrawerMenu", "AccountMenuItem"]
 - ["C12DrawerSample10DrawerMenu", "CGRect"]
 - ["C12DrawerSample10DrawerMenu", "DefaultFrame"]
 - !private ["C12DrawerSample10DrawerMenu", "DrawerMenu"]
-- ["C12DrawerSample10DrawerMenu", "Int"]
 - !private ["C12DrawerSample10DrawerMenu", "MenuItem"]
+- ["C12DrawerSample10DrawerMenu", "MenuItemType"]
 - ["C12DrawerSample10DrawerMenu", "NSCoder"]
 - !private ["C12DrawerSample10DrawerMenu", "NSLayoutConstraint"]
 - ["C12DrawerSample10DrawerMenu", "UIView"]
@@ -174,10 +173,10 @@ depends-member:
 - ["C12DrawerSample10DrawerMenu", "deinit"]
 - ["C12DrawerSample10DrawerMenu", "init"]
 - ["C12DrawerSample10DrawerMenu", "menuItemContainer"]
+- !private ["Ps9Equatable", "AccountMenuItem"]
 - ["Ps9Equatable", "CGRect"]
 - ["Ps9Equatable", "DefaultFrame"]
 - !private ["Ps9Equatable", "DrawerMenu"]
-- !private ["Ps9Equatable", "MenuItem"]
 - !private ["Ps9Equatable", "NSLayoutConstraint"]
 - ["Ps9Equatable", "ViewName"]
 - !private ["Ps9Equatable", "addConstraints"]
@@ -202,11 +201,10 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "AccountMenuItem"]
 - ["Ps8Hashable", "CGRect"]
 - ["Ps8Hashable", "DefaultFrame"]
 - !private ["Ps8Hashable", "DrawerMenu"]
-- !private ["Ps8Hashable", "MenuItem"]
 - !private ["Ps8Hashable", "NSLayoutConstraint"]
 - ["Ps8Hashable", "ViewName"]
 - !private ["Ps8Hashable", "addConstraints"]
@@ -234,15 +232,12 @@ depends-member:
 - !private ["Ps13IndexableBase", "last"]
 - !private ["Vs16IndexingIterator", "Element"]
 - ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - ["Ps25LosslessStringConvertible", "init"]
-- ["C12DrawerSample8MenuItem", "deinit"]
-- !private ["C12DrawerSample8MenuItem", "init"]
-- !private ["C12DrawerSample8MenuItem", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["P12DrawerSample8MenuItem", "init"]
+- ["O12DrawerSample12MenuItemType", "HomeSolutions"]
+- ["O12DrawerSample12MenuItemType", "Mobility"]
+- ["O12DrawerSample12MenuItemType", "deinit"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "Iterator"]
@@ -253,10 +248,10 @@ depends-member:
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "last"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "AccountMenuItem"]
 - ["PSo8NSCoding", "CGRect"]
 - ["PSo8NSCoding", "DefaultFrame"]
 - !private ["PSo8NSCoding", "DrawerMenu"]
-- !private ["PSo8NSCoding", "MenuItem"]
 - !private ["PSo8NSCoding", "NSLayoutConstraint"]
 - ["PSo8NSCoding", "ViewName"]
 - !private ["PSo8NSCoding", "addConstraints"]
@@ -280,11 +275,12 @@ depends-member:
 - !private ["OSC16NSLayoutRelation", "equal"]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Account"]
+- !private ["CSo8NSObject", "AccountMenuItem"]
 - ["CSo8NSObject", "CGRect"]
 - ["CSo8NSObject", "DefaultFrame"]
 - !private ["CSo8NSObject", "DrawerMenu"]
-- ["CSo8NSObject", "Int"]
 - !private ["CSo8NSObject", "MenuItem"]
+- ["CSo8NSObject", "MenuItemType"]
 - ["CSo8NSObject", "NSCoder"]
 - !private ["CSo8NSObject", "NSLayoutConstraint"]
 - ["CSo8NSObject", "UIView"]
@@ -297,10 +293,10 @@ depends-member:
 - ["CSo8NSObject", "menuItemContainer"]
 - !private ["CSo8NSObject", "subviews"]
 - !private ["CSo8NSObject", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo16NSObjectProtocol", "AccountMenuItem"]
 - ["PSo16NSObjectProtocol", "CGRect"]
 - ["PSo16NSObjectProtocol", "DefaultFrame"]
 - !private ["PSo16NSObjectProtocol", "DrawerMenu"]
-- !private ["PSo16NSObjectProtocol", "MenuItem"]
 - !private ["PSo16NSObjectProtocol", "NSLayoutConstraint"]
 - ["PSo16NSObjectProtocol", "ViewName"]
 - !private ["PSo16NSObjectProtocol", "addConstraints"]
@@ -347,10 +343,10 @@ depends-member:
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "AccountMenuItem"]
 - ["PSo29UIAccessibilityIdentification", "CGRect"]
 - ["PSo29UIAccessibilityIdentification", "DefaultFrame"]
 - !private ["PSo29UIAccessibilityIdentification", "DrawerMenu"]
-- !private ["PSo29UIAccessibilityIdentification", "MenuItem"]
 - !private ["PSo29UIAccessibilityIdentification", "NSLayoutConstraint"]
 - ["PSo29UIAccessibilityIdentification", "ViewName"]
 - !private ["PSo29UIAccessibilityIdentification", "addConstraints"]
@@ -361,10 +357,10 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "subviews"]
 - !private ["PSo29UIAccessibilityIdentification", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo29UIAccessibilityIdentification", ""]
+- !private ["PSo12UIAppearance", "AccountMenuItem"]
 - ["PSo12UIAppearance", "CGRect"]
 - ["PSo12UIAppearance", "DefaultFrame"]
 - !private ["PSo12UIAppearance", "DrawerMenu"]
-- !private ["PSo12UIAppearance", "MenuItem"]
 - !private ["PSo12UIAppearance", "NSLayoutConstraint"]
 - ["PSo12UIAppearance", "ViewName"]
 - !private ["PSo12UIAppearance", "addConstraints"]
@@ -375,10 +371,10 @@ depends-member:
 - !private ["PSo12UIAppearance", "subviews"]
 - !private ["PSo12UIAppearance", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo12UIAppearance", ""]
+- !private ["PSo21UIAppearanceContainer", "AccountMenuItem"]
 - ["PSo21UIAppearanceContainer", "CGRect"]
 - ["PSo21UIAppearanceContainer", "DefaultFrame"]
 - !private ["PSo21UIAppearanceContainer", "DrawerMenu"]
-- !private ["PSo21UIAppearanceContainer", "MenuItem"]
 - !private ["PSo21UIAppearanceContainer", "NSLayoutConstraint"]
 - ["PSo21UIAppearanceContainer", "ViewName"]
 - !private ["PSo21UIAppearanceContainer", "addConstraints"]
@@ -389,10 +385,10 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "subviews"]
 - !private ["PSo21UIAppearanceContainer", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo17UICoordinateSpace", "AccountMenuItem"]
 - ["PSo17UICoordinateSpace", "CGRect"]
 - ["PSo17UICoordinateSpace", "DefaultFrame"]
 - !private ["PSo17UICoordinateSpace", "DrawerMenu"]
-- !private ["PSo17UICoordinateSpace", "MenuItem"]
 - !private ["PSo17UICoordinateSpace", "NSLayoutConstraint"]
 - ["PSo17UICoordinateSpace", "ViewName"]
 - !private ["PSo17UICoordinateSpace", "addConstraints"]
@@ -403,10 +399,10 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "subviews"]
 - !private ["PSo17UICoordinateSpace", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo17UICoordinateSpace", ""]
+- !private ["PSo13UIDynamicItem", "AccountMenuItem"]
 - ["PSo13UIDynamicItem", "CGRect"]
 - ["PSo13UIDynamicItem", "DefaultFrame"]
 - !private ["PSo13UIDynamicItem", "DrawerMenu"]
-- !private ["PSo13UIDynamicItem", "MenuItem"]
 - !private ["PSo13UIDynamicItem", "NSLayoutConstraint"]
 - ["PSo13UIDynamicItem", "ViewName"]
 - !private ["PSo13UIDynamicItem", "addConstraints"]
@@ -417,10 +413,10 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "subviews"]
 - !private ["PSo13UIDynamicItem", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo13UIDynamicItem", ""]
+- !private ["PSo18UIFocusEnvironment", "AccountMenuItem"]
 - ["PSo18UIFocusEnvironment", "CGRect"]
 - ["PSo18UIFocusEnvironment", "DefaultFrame"]
 - !private ["PSo18UIFocusEnvironment", "DrawerMenu"]
-- !private ["PSo18UIFocusEnvironment", "MenuItem"]
 - !private ["PSo18UIFocusEnvironment", "NSLayoutConstraint"]
 - ["PSo18UIFocusEnvironment", "ViewName"]
 - !private ["PSo18UIFocusEnvironment", "addConstraints"]
@@ -431,10 +427,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "subviews"]
 - !private ["PSo18UIFocusEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "AccountMenuItem"]
 - ["PSo11UIFocusItem", "CGRect"]
 - ["PSo11UIFocusItem", "DefaultFrame"]
 - !private ["PSo11UIFocusItem", "DrawerMenu"]
-- !private ["PSo11UIFocusItem", "MenuItem"]
 - !private ["PSo11UIFocusItem", "NSLayoutConstraint"]
 - ["PSo11UIFocusItem", "ViewName"]
 - !private ["PSo11UIFocusItem", "addConstraints"]
@@ -446,11 +442,12 @@ depends-member:
 - !private ["PSo11UIFocusItem", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo11UIFocusItem", ""]
 - ["CSo11UIResponder", "Account"]
+- !private ["CSo11UIResponder", "AccountMenuItem"]
 - ["CSo11UIResponder", "CGRect"]
 - ["CSo11UIResponder", "DefaultFrame"]
 - !private ["CSo11UIResponder", "DrawerMenu"]
-- ["CSo11UIResponder", "Int"]
 - !private ["CSo11UIResponder", "MenuItem"]
+- ["CSo11UIResponder", "MenuItemType"]
 - ["CSo11UIResponder", "NSCoder"]
 - !private ["CSo11UIResponder", "NSLayoutConstraint"]
 - ["CSo11UIResponder", "UIView"]
@@ -462,10 +459,10 @@ depends-member:
 - ["CSo11UIResponder", "menuItemContainer"]
 - !private ["CSo11UIResponder", "subviews"]
 - !private ["CSo11UIResponder", "translatesAutoresizingMaskIntoConstraints"]
+- !private ["PSo30UIResponderStandardEditActions", "AccountMenuItem"]
 - ["PSo30UIResponderStandardEditActions", "CGRect"]
 - ["PSo30UIResponderStandardEditActions", "DefaultFrame"]
 - !private ["PSo30UIResponderStandardEditActions", "DrawerMenu"]
-- !private ["PSo30UIResponderStandardEditActions", "MenuItem"]
 - !private ["PSo30UIResponderStandardEditActions", "NSLayoutConstraint"]
 - ["PSo30UIResponderStandardEditActions", "ViewName"]
 - !private ["PSo30UIResponderStandardEditActions", "addConstraints"]
@@ -476,10 +473,10 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "subviews"]
 - !private ["PSo30UIResponderStandardEditActions", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo18UITraitEnvironment", "AccountMenuItem"]
 - ["PSo18UITraitEnvironment", "CGRect"]
 - ["PSo18UITraitEnvironment", "DefaultFrame"]
 - !private ["PSo18UITraitEnvironment", "DrawerMenu"]
-- !private ["PSo18UITraitEnvironment", "MenuItem"]
 - !private ["PSo18UITraitEnvironment", "NSLayoutConstraint"]
 - ["PSo18UITraitEnvironment", "ViewName"]
 - !private ["PSo18UITraitEnvironment", "addConstraints"]
@@ -491,11 +488,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "translatesAutoresizingMaskIntoConstraints"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Account"]
+- !private ["CSo6UIView", "AccountMenuItem"]
 - ["CSo6UIView", "CGRect"]
 - ["CSo6UIView", "DefaultFrame"]
 - !private ["CSo6UIView", "DrawerMenu"]
-- ["CSo6UIView", "Int"]
 - !private ["CSo6UIView", "MenuItem"]
+- ["CSo6UIView", "MenuItemType"]
 - ["CSo6UIView", "NSCoder"]
 - !private ["CSo6UIView", "NSLayoutConstraint"]
 - ["CSo6UIView", "UIView"]
@@ -509,19 +507,14 @@ depends-member:
 - !private ["CSo6UIView", "subviews"]
 - !private ["CSo6UIView", "translatesAutoresizingMaskIntoConstraints"]
 - ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "last"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "AccountMenuItem"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "CGRect"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "DefaultFrame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "DrawerMenu"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "MenuItem"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "NSLayoutConstraint"]
 - ["Ps37_DefaultCustomPlaygroundQuickLookable", "ViewName"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addConstraints"]
@@ -541,10 +534,10 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "AccountMenuItem"]
 - ["Ps9_Hashable", "CGRect"]
 - ["Ps9_Hashable", "DefaultFrame"]
 - !private ["Ps9_Hashable", "DrawerMenu"]
-- !private ["Ps9_Hashable", "MenuItem"]
 - !private ["Ps9_Hashable", "NSLayoutConstraint"]
 - ["Ps9_Hashable", "ViewName"]
 - !private ["Ps9_Hashable", "addConstraints"]
@@ -568,6 +561,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "last"]
 depends-nominal:
 - "C12DrawerSample7Account"
+- "C12DrawerSample15AccountMenuItem"
 - "Ps9AnyObject"
 - "Sa"
 - !private "Ps23BidirectionalCollection"
@@ -577,7 +571,6 @@ depends-nominal:
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "Ps7CVarArg"
-- !private "Vs9Character"
 - !private "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -585,7 +578,6 @@ depends-nominal:
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "C12DrawerSample10CustomView"
-- !private "Sd"
 - "C12DrawerSample10DrawerMenu"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
@@ -593,20 +585,16 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "Sf"
 - "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
 - "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - !private "Ps16IteratorProtocol"
 - "Ps25LosslessStringConvertible"
-- "C12DrawerSample8MenuItem"
+- !private "P12DrawerSample8MenuItem"
+- "O12DrawerSample12MenuItemType"
 - "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
@@ -645,11 +633,6 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
 - !private "Ps14_ArrayProtocol"
 - "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
@@ -672,4 +655,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "a6d08a17fca954e5a4db79e55c161635"
+interface-hash: "f98c37f445ac6c09fd4c78b3b302f5b3"

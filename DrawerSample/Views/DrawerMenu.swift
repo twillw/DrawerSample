@@ -28,10 +28,19 @@ internal class DrawerMenu: CustomView {
     
     // MARK: Internal Methods
     
-    internal func addMenuItem(_ account: Account, atIndex index: Int, onSelection action: @escaping (Int) -> Void) {
+    internal func addMenuItem(_ account: Account, type: MenuItemType, onSelection action: @escaping (MenuItemType) -> Void) {
         
+        // TODO: add other menu item types
         // create new menu item view
-        let menuItem = MenuItem(withNickname: account.name, andBan: "Account # \(account.ban)", itemIndex: index, action: action)
+        var menuItem: MenuItem!
+        switch type {
+        case .Mobility(let account):
+            menuItem = AccountMenuItem(account: account, action: action, type: type)
+            break
+        case .HomeSolutions(let account):
+            menuItem = AccountMenuItem(account: account, action: action, type: type)
+            break
+        }
         
         // set up leading, trailing and top constraint for new menu item
         let leading = NSLayoutConstraint(item: menuItem, attribute: .leading, relatedBy: .equal, toItem: menuItemContainer, attribute: .leading, multiplier: 1.0, constant: 0.0)
@@ -47,11 +56,14 @@ internal class DrawerMenu: CustomView {
         }
         
         // add new menu item to container
-        menuItem.translatesAutoresizingMaskIntoConstraints = false
-        menuItemContainer.addSubview(menuItem)
-        
-        // add constraints to menu item
-        menuItemContainer.addConstraints([leading, trailing, top, height])
+        if let menuItemView = menuItem as? UIView {
+            
+            menuItemView.translatesAutoresizingMaskIntoConstraints = false
+            menuItemContainer.addSubview(menuItemView)
+            
+            // add constraints to menu item
+            menuItemContainer.addConstraints([leading, trailing, top, height])
+        }
     }
 }
 

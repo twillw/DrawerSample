@@ -20,8 +20,8 @@ internal class DrawerCoordinatorController: UIViewController, UIGestureRecognize
     private var overlay: UIView!
     
     private var isOpen = false
-    private var accountControllers = [AccountController]()
-    private var currentlySelectedIndex = 0
+    private var accounts = [Account]()
+    private var currentlySelectedController: UIViewController!
     
     
     // MARK: lifecycle methods
@@ -32,33 +32,11 @@ internal class DrawerCoordinatorController: UIViewController, UIGestureRecognize
         // initialize drawer menu
         initializeDrawer()
         
-        // add child view controllers
-        // TODO: this is just for testing
-        let test1 = UIStoryboard(name: "Test", bundle: nil).instantiateInitialViewController() as! TestController
-        test1.labelText = "Test 1"
-        test1.title = "Test 1"
-        let test2 = UIStoryboard(name: "Test", bundle: nil).instantiateInitialViewController() as! TestController
-        test2.labelText = "Test 2"
-        test2.title = "Test 2"
-        let test3 = UIStoryboard(name: "Test", bundle: nil).instantiateInitialViewController() as! TestController
-        test3.labelText = "Test 3"
-        test3.title = "Test 3"
-        let account1 = AccountController(controllers: [test1, test2, test3])
-        account1.account = Account(ban: "123456", name: "First Jimmy")
+        // add accounts
+        let account1 = Account(ban: "12345", name: "First Jimmy", type: .Mobility)
+        let account2 = Account(ban: "67890", name: "Second Jimmy", type: .HomeSolutions)
         
-        
-        let test4 = UIStoryboard(name: "Test", bundle: nil).instantiateInitialViewController() as! TestController
-        test4.labelText = "Test 4"
-        test4.title = "Test 4"
-        let test5 = UIStoryboard(name: "Test", bundle: nil).instantiateInitialViewController() as! TestController
-        test5.labelText = "Test 5"
-        test5.title = "Test 5"
-        let account2 = AccountController(controllers: [test4, test5])
-        account2.account = Account(ban: "67890", name: "Second Jimmy")
-        
-        
-        addAccountController(controller: account1)
-        addAccountController(controller: account2)
+        addAccounts(accounts: [account1, account2])
         
         // select first item by default
         setDefaultController()
@@ -160,28 +138,45 @@ internal class DrawerCoordinatorController: UIViewController, UIGestureRecognize
         isOpen = false
     }
     
-    // TODO: should be able to use this for an array as well
-    private func addAccountController(controller: AccountController) {
+    internal func addAccounts(accounts: [Account]) {
         
-        // get current index based on array length
-        let newIndex = accountControllers.count
-        
-        // add account controller to list
-        accountControllers.append(controller)
-        
-        // add link to controller in nav menu
-        drawerMenu.addMenuItem(controller.account, atIndex: newIndex, onSelection: onNavItemSelected)
+        // iterate over controllers and add them
+        for account in accounts {
+            addAccount(account: account)
+        }
     }
     
-    private func onNavItemSelected(selectedItem: Int) {
+    private func addAccount(account: Account) {
         
-        // if new index doesn't match currently selected index then transition to new controller
-        if selectedItem != currentlySelectedIndex {
-            
-            transitionFrom(controller: accountControllers[currentlySelectedIndex],
-                toController: accountControllers[selectedItem])
-            currentlySelectedIndex = selectedItem
+        // add account to list
+        accounts.append(account)
+        
+        // get type based on account type
+        let type: MenuItemType = account.type == .Mobility
+            ? .Mobility(account: account)
+            : .HomeSolutions(account: account)
+        
+        // add link to controller in nav menu
+        drawerMenu.addMenuItem(account, type: type, onSelection: onNavItemSelected)
+    }
+    
+    private func onNavItemSelected(itemType: MenuItemType) {
+        
+        // TODO: check if item is already selected
+        
+        var controller: UIViewController!
+        switch itemType {
+        case .Mobility(let account):
+            // create mobility account controller
+            controller = MobilityController(account: account)
+            break
+        case .HomeSolutions(let account):
+            // create home solutions account controller
+            controller = HomeSolutionsController(account: account)
+            break
         }
+        
+        transitionFrom(controller: currentlySelectedController, toController: controller)
         
         // close burger menu
         closeDrawer()
@@ -190,25 +185,21 @@ internal class DrawerCoordinatorController: UIViewController, UIGestureRecognize
     private func setDefaultController() {
         
         // if accountControllers is not empty get the first
-        if let firstController = accountControllers.first {
+        if let firstAccount = accounts.first {
             
-            // add first controller as a child
-            addChildViewController(firstController)
-            
-            // set up new controllers frame
-            // TODO: anchor new view with constraints
-            firstController.view.frame = containerView.bounds
-            containerView.addSubview(firstController.view)
-            
-            // notify controller
-            firstController.didMove(toParentViewController: self)
+            if firstAccount.type == .Mobility {
+                onNavItemSelected(itemType: .Mobility(account: firstAccount))
+            }
+            else {
+                onNavItemSelected(itemType: .HomeSolutions(account: firstAccount))
+            }
         }
     }
     
-    private func transitionFrom(controller old: AccountController, toController new: AccountController) {
+    private func transitionFrom(controller old: UIViewController?, toController new: UIViewController) {
         
         // prepare old controller to be removed
-        old.willMove(toParentViewController: nil)
+        old?.willMove(toParentViewController: nil)
         
         // add new controller as child
         addChildViewController(new)
@@ -218,11 +209,14 @@ internal class DrawerCoordinatorController: UIViewController, UIGestureRecognize
         containerView.addSubview(new.view)
         
         // remove old controller
-        old.view.removeFromSuperview()
-        old.removeFromParentViewController()
+        old?.view.removeFromSuperview()
+        old?.removeFromParentViewController()
         
         // show new controller
         new.didMove(toParentViewController: self)
+        
+        // set current view controller
+        currentlySelectedController = new
     }
     
     
