@@ -26,7 +26,19 @@
 		</data>
 		<key>DrawerMenu.nib</key>
 		<data>
-		3XR458BBtZbeoXM1p9wUub+BGK0=
+		fYSAm5JyohQh0RYWsCBS6rTY1f0=
+		</data>
+		<key>Frameworks/PromiseKit.framework/Info.plist</key>
+		<data>
+		Zds5WKgF3HSuKGaAzr9l9HO34nQ=
+		</data>
+		<key>Frameworks/PromiseKit.framework/PromiseKit</key>
+		<data>
+		Ek684WltODp7xgMk9TynoD2F1YY=
+		</data>
+		<key>Frameworks/PromiseKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		gwzldh1fTims5zq9qGpvqz8NSUg=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -70,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2o6MpN9z6PWLB3oGoTbc9ELiZ7U=
+		1zufutv9j7xnArziXNnyJ4Teodk=
 		</data>
 		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
@@ -90,15 +102,15 @@
 		</data>
 		<key>Test.storyboardc/Info.plist</key>
 		<data>
-		eNfkFRuviCYzaD0ZWIF64IIjgaE=
+		jEo5+pxN2XUKhE0sfxbPoFRf9xI=
 		</data>
-		<key>Test.storyboardc/UIViewController-fQe-Hn-3sK.nib</key>
+		<key>Test.storyboardc/TestListController.nib</key>
 		<data>
-		DewcpKsOVJ+g0gGyJwmsN2RUT9c=
+		KVwMDUBS+hO+IthiI8e8BasJSrA=
 		</data>
-		<key>Test.storyboardc/fQe-Hn-3sK-view-die-W3-xgg.nib</key>
+		<key>Test.storyboardc/pMw-Xa-EeO-view-CJm-Fg-UvM.nib</key>
 		<data>
-		BEzg4tJFblGrzwBmNfjmtOHRec8=
+		bGEdzqO9tWCxv4u3pW4ErSuKzio=
 		</data>
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
@@ -166,11 +178,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3XR458BBtZbeoXM1p9wUub+BGK0=
+			fYSAm5JyohQh0RYWsCBS6rTY1f0=
 			</data>
 			<key>hash2</key>
 			<data>
-			PY34a15u96+GpeCiQaTnA+NCImlQrRHnUSKV78+/FF0=
+			Ih8CFEQbVh1TZYQM5TCE/NIlN0Ara/dy/JB14c2yoa8=
+			</data>
+		</dict>
+		<key>Frameworks/PromiseKit.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Zds5WKgF3HSuKGaAzr9l9HO34nQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			NsJI55bRp57wAQKxKzptFKBrrxvDqKCt630UaFZ/dCE=
+			</data>
+		</dict>
+		<key>Frameworks/PromiseKit.framework/PromiseKit</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ek684WltODp7xgMk9TynoD2F1YY=
+			</data>
+			<key>hash2</key>
+			<data>
+			2+SuRNDFLR3WRXihVuPWDat/tK6BsvQpjupdsAWGVF4=
+			</data>
+		</dict>
+		<key>Frameworks/PromiseKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gwzldh1fTims5zq9qGpvqz8NSUg=
+			</data>
+			<key>hash2</key>
+			<data>
+			igYkqBOKG7oP4KEjOJmC2mP8UYFgvjcXY4E0+e3Qx0s=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -320,33 +365,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eNfkFRuviCYzaD0ZWIF64IIjgaE=
+			jEo5+pxN2XUKhE0sfxbPoFRf9xI=
 			</data>
 			<key>hash2</key>
 			<data>
-			aaN0nei2jQPXr1f1zSabqDjxWWLJTcxx1lqXr+bXpyg=
+			O58UHPgSaWYLX6mjJ9UkHpx6c9XLIqkT8BOy6NkUf1M=
 			</data>
 		</dict>
-		<key>Test.storyboardc/UIViewController-fQe-Hn-3sK.nib</key>
+		<key>Test.storyboardc/TestListController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DewcpKsOVJ+g0gGyJwmsN2RUT9c=
+			KVwMDUBS+hO+IthiI8e8BasJSrA=
 			</data>
 			<key>hash2</key>
 			<data>
-			bAnz05ot9ekF2KoBVb9VMr4JJ4iljSrlk60D9iHzoYs=
+			FCSf4Bi3vk1ILkk0vpVxbC3+WlgBIexQ84jX2cvDBdM=
 			</data>
 		</dict>
-		<key>Test.storyboardc/fQe-Hn-3sK-view-die-W3-xgg.nib</key>
+		<key>Test.storyboardc/pMw-Xa-EeO-view-CJm-Fg-UvM.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BEzg4tJFblGrzwBmNfjmtOHRec8=
+			bGEdzqO9tWCxv4u3pW4ErSuKzio=
 			</data>
 			<key>hash2</key>
 			<data>
-			qxBnjwQ5WPEYLD/ImiVRPmGMT5t8J7WV2ECXGEzTp1w=
+			A6p3NQ/5Mbc0vAeyZBZK1DphPZAFtYJ+/tSkqsmoO4Y=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>

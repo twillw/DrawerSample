@@ -12,10 +12,60 @@ internal class ListController: UIViewController, UITableViewDataSource, UITableV
     private var listItemPromise: Promise<[ListItem]>?
     
     
+    // MARK: lifecycle methods
+    
+    internal override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // configure data source and delegate
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        _ = loadData()
+            .then {
+                [weak self = self] _ in
+                
+                // reload tableview on success
+                self?.tableView.reloadData()
+            }
+    }
+    
+    
     // MARK: internal methods
     
     internal func loadListItems() -> Promise<[ListItem]> {
+        // no-op this should be overridden
+        fatalError("This should be overridden")
+    }
+    
+    
+    // MARK: private methods
+    
+    private func loadData(forceLive: Bool = false) -> Promise<[ListItem]> {
         
+        if let promise = listItemPromise, forceLive == false {
+            return promise
+        }
+        
+        // cache load list item promise
+        listItemPromise = loadListItems().then {
+            [weak self = self]
+            listItems -> [ListItem] in
+            
+                // set list items property
+                self?.listItems = listItems
+                return listItems
+            }
+        
+            listItemPromise?.catch {
+                [weak self = self]
+                error in
+                
+                // set cached promise to nil if promise was rejected
+                self?.listItemPromise = nil
+            }
+        
+        return listItemPromise!
     }
 
   
@@ -49,6 +99,5 @@ internal class ListController: UIViewController, UITableViewDataSource, UITableV
         let item = listItems[indexPath.row]
         item.onItemSelected()
     }
-
 }
 
