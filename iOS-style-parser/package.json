@@ -1,0 +1,15 @@
+{
+  "name": "ios-style-parser",
+  "version": "0.0.1",
+  "description": "Generates a Swift class used for sharing styles in an iOS application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mustache": "^2.3.0",
+    "xml2js": "^0.4.17"
+  }
+}

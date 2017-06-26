@@ -1,64 +1,75 @@
 
 import UIKit
 
-internal class CustomView : UIView {
-  
-  // MARK: instance properties
-  
-  private var view: UIView!
-  
-  
-  // MARK: constructors
-  
-  internal init(viewName: String, frame: CGRect) {
+@IBDesignable internal class CustomView : UIView {
     
-    // call super constructor
-    super.init(frame: frame)
+    // MARK: instance properties
     
-    // bind to nib
-    bindNib(viewName: viewName)
-  }
-  
-  internal init?(viewName: String, coder aDecoder: NSCoder) {
+    private var view: UIView!
     
-    // call super constructor
-    super.init(coder: aDecoder)
     
-    // bind to nib
-    bindNib(viewName: viewName)
-  }
-  
-  internal required init?(coder aDecoder: NSCoder) {
+    // MARK: constructors
     
-    // call super constructor
-    super.init(coder: aDecoder)
+    internal init(viewName: String, frame: CGRect) {
+        
+        // call super constructor
+        super.init(frame: frame)
+        
+        // bind to nib
+        bindNib(viewName: viewName)
+    }
     
-    // fail
-    fatalError(#function + " must be overridden");
-  }
-  
-  
-  // MARK: private methods
-  
-  private final func bindNib(viewName: String) {
+    internal init?(viewName: String, coder aDecoder: NSCoder) {
+        
+        // call super constructor
+        super.init(coder: aDecoder)
+        
+        // bind to nib
+        bindNib(viewName: viewName)
+    }
     
-    // load xib
-    let nib = UINib(nibName: viewName, bundle: Bundle.main)
-    view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+    internal required init?(coder aDecoder: NSCoder) {
+        
+        // call super constructor
+        super.init(coder: aDecoder)
+        
+        // fail
+        fatalError(#function + " must be overridden");
+    }
     
-    // initialize to fit container
-    view.frame = bounds
+    internal override init(frame: CGRect) {
+        
+        // call super.init(frame:)
+        super.init(frame: frame)
+        
+        // fail
+        fatalError(#function + " must be overridden");
+    }
     
-    // add child
-    addSubview(view)
-    view.anchorToParent(parent: self)
     
-    // invoke bind hook
-    onBindView(view: view)
-  }
-  
-  internal func onBindView(view: UIView) {
-  }
+    // MARK: private methods
+    
+    private final func bindNib(viewName: String) {
+        
+        // load xib
+        let bundle = Bundle(for: type(of: self))
+        let nib = UINib(nibName: viewName, bundle: bundle)
+        view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+        
+        // initialize to fit container
+        view.frame = bounds
+        
+        // add child
+        addSubview(view)
+//        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        view.anchorToParent(parent: self)
+        
+        // invoke bind hook
+        onBindView(view: view)
+    }
+    
+    internal func onBindView(view: UIView) {
+    }
 }
 
 extension UIView {

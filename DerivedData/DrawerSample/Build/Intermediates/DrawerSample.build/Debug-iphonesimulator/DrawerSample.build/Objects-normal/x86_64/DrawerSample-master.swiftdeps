@@ -1,15 +1,19 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "cfac908806bdba5e932daf7c9e1b60ed"
-build_time: [550628193, 263317000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "4c674f58b2a6ede04a5641280682b904"
+build_time: [551564195, 64659000]
 inputs:
-  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/MenuItem/AccountMenuItem.swift": [550627756, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/MenuItem/AccountMenuItem.swift": [551476639, 0]
   "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/Account/HomeSolutionsController.swift": [550616227, 0]
   "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/AppDelegate.swift": [550006784, 0]
-  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/DrawerMenu.swift": [550627879, 0]
-  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/CustomView.swift": [550161829, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/DrawerMenu.swift": [551560090, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/CustomView.swift": [551558474, 0]
   "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/TestController.swift": [550591813, 0]
-  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/DrawerCoordinatorController.swift": [550628193, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/DrawerCoordinatorController.swift": [551562834, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Styles/Style.swift": [550697200, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/List/ListItem.swift": [551564195, 0]
   "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/Account/AccountController.swift": [550615978, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Styles/ButtonStyle.swift": [550697200, 0]
   "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Views/MenuItem/MenuItem.swift": [550627775, 0]
   "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/Account/MobilityController.swift": [550616242, 0]
-  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/ViewPagerController.swift": [550350885, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/List/ListController.swift": !dirty [551564032, 0]
+  "/Users/tomwark/dev/ios/DrawerSample/DrawerSample/Controllers/List/ListItemCell.swift": [9223372036854775807, 0]

@@ -11,6 +11,16 @@ internal class AccountMenuItem: CustomView, MenuItem {
     
     // MARK: instance variables
     
+    @IBInspectable var nicknameText: String? {
+        didSet {
+            nicknameLabel.text = nicknameText
+        }
+    }
+    @IBInspectable internal var labelColor: UIColor? {
+        didSet {
+            nicknameLabel.textColor = labelColor
+        }
+    }
     internal var type: MenuItemType!
     private var onItemSelected: ((MenuItemType) -> Void)?
     private var itemIndex: Int = 0
@@ -42,6 +52,12 @@ internal class AccountMenuItem: CustomView, MenuItem {
     // only called when build from interface builder
     internal required init?(coder aDecoder: NSCoder) {
         super.init(viewName: AccountMenuItem.ViewName, coder: aDecoder)
+    }
+    
+    // called to allow IBDesignable feature
+    override init(frame: CGRect) {
+        // Call super init with viewName
+        super.init(viewName: AccountMenuItem.ViewName, frame: frame)
     }
     
     

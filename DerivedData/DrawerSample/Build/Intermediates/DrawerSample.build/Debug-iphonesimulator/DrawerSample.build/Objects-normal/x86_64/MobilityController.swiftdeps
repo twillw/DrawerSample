@@ -8,19 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- "MobilityController"
-- "AssignmentPrecedence"
-- !private "UIStoryboard"
-- "CastingPrecedence"
-- !private "TestController"
-- !private "StringLiteralType"
 - "AccountController"
 - !private "Array"
+- "AssignmentPrecedence"
 - !private "BooleanLiteralType"
+- "CastingPrecedence"
+- "MobilityController"
+- !private "StringLiteralType"
+- !private "TestController"
+- !private "UIStoryboard"
 depends-member:
 - !private ["C12DrawerSample17AccountController", "TestController"]
 - !private ["C12DrawerSample17AccountController", "UIStoryboard"]
-- ["C12DrawerSample17AccountController", "deinit"]
 - ["C12DrawerSample17AccountController", "init"]
 - !private ["C12DrawerSample17AccountController", "setViewControllers"]
 - ["C12DrawerSample17AccountController", "viewDidLoad"]
@@ -31,44 +30,34 @@ depends-member:
 - !private ["Ps9AnyObject", "labelText"]
 - !private ["Ps9AnyObject", "setViewControllers"]
 - !private ["Ps9AnyObject", "title"]
-- ["Ps9AnyObject", "viewDidLoad"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Element"]
-- ["Sa", "deinit"]
-- !private ["Ps23BidirectionalCollection", "Element"]
-- !private ["Ps22BidirectionalIndexable", "Element"]
-- ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "UIStoryboard"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateInitialViewController"]
 - !private ["Ps7CVarArg", "labelText"]
 - !private ["Ps7CVarArg", "setViewControllers"]
 - !private ["Ps7CVarArg", "title"]
-- ["Ps7CVarArg", "viewDidLoad"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps10Collection", "Element"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "UIStoryboard"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateInitialViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "labelText"]
 - !private ["Ps28CustomDebugStringConvertible", "setViewControllers"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
-- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "UIStoryboard"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateInitialViewController"]
 - !private ["Ps23CustomStringConvertible", "labelText"]
 - !private ["Ps23CustomStringConvertible", "setViewControllers"]
 - !private ["Ps23CustomStringConvertible", "title"]
-- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "UIStoryboard"]
 - !private ["Ps9Equatable", "init"]
@@ -76,11 +65,9 @@ depends-member:
 - !private ["Ps9Equatable", "labelText"]
 - !private ["Ps9Equatable", "setViewControllers"]
 - !private ["Ps9Equatable", "title"]
-- ["Ps9Equatable", "viewDidLoad"]
+- !private ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "UIStoryboard"]
@@ -89,11 +76,8 @@ depends-member:
 - !private ["Ps8Hashable", "labelText"]
 - !private ["Ps8Hashable", "setViewControllers"]
 - !private ["Ps8Hashable", "title"]
-- ["Ps8Hashable", "viewDidLoad"]
+- !private ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
-- !private ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Element"]
-- !private ["Ps13IndexableBase", "Element"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["C12DrawerSample18MobilityController", "TestController"]
@@ -102,15 +86,12 @@ depends-member:
 - ["C12DrawerSample18MobilityController", "init"]
 - !private ["C12DrawerSample18MobilityController", "setViewControllers"]
 - ["C12DrawerSample18MobilityController", "viewDidLoad"]
-- !private ["Ps17MutableCollection", "Element"]
-- !private ["Ps16MutableIndexable", "Element"]
-- ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "UIStoryboard"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "labelText"]
 - !private ["PSo8NSCoding", "setViewControllers"]
 - !private ["PSo8NSCoding", "title"]
-- ["PSo8NSCoding", "viewDidLoad"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "UIStoryboard"]
@@ -118,7 +99,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "labelText"]
 - !private ["PSo26NSExtensionRequestHandling", "setViewControllers"]
 - !private ["PSo26NSExtensionRequestHandling", "title"]
-- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "TestController"]
@@ -135,19 +116,11 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "labelText"]
 - !private ["PSo16NSObjectProtocol", "setViewControllers"]
 - !private ["PSo16NSObjectProtocol", "title"]
-- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- ["Sq", "deinit"]
-- !private ["Ps22RandomAccessCollection", "Element"]
-- !private ["Ps21RandomAccessIndexable", "Element"]
-- !private ["Ps26RangeReplaceableCollection", "Element"]
-- !private ["Ps25RangeReplaceableIndexable", "Element"]
-- !private ["Ps8Sequence", "Element"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
-- ["C12DrawerSample14TestController", "deinit"]
 - !private ["C12DrawerSample14TestController", "labelText"]
 - !private ["C12DrawerSample14TestController", "title"]
 - !private ["Ps16TextOutputStream", "init"]
@@ -157,21 +130,21 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "labelText"]
 - !private ["PSo21UIAppearanceContainer", "setViewControllers"]
 - !private ["PSo21UIAppearanceContainer", "title"]
-- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "UIStoryboard"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "labelText"]
 - !private ["PSo18UIContentContainer", "setViewControllers"]
 - !private ["PSo18UIContentContainer", "title"]
-- ["PSo18UIContentContainer", "viewDidLoad"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo18UIFocusEnvironment", "UIStoryboard"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "labelText"]
 - !private ["PSo18UIFocusEnvironment", "setViewControllers"]
 - !private ["PSo18UIFocusEnvironment", "title"]
-- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["CSo11UIResponder", "TestController"]
 - !private ["CSo11UIResponder", "UIStoryboard"]
@@ -185,16 +158,15 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "labelText"]
 - !private ["PSo30UIResponderStandardEditActions", "setViewControllers"]
 - !private ["PSo30UIResponderStandardEditActions", "title"]
-- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "UIStoryboard"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "labelText"]
 - !private ["PSo16UIStateRestoring", "setViewControllers"]
 - !private ["PSo16UIStateRestoring", "title"]
-- ["PSo16UIStateRestoring", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
-- ["CSo12UIStoryboard", "deinit"]
 - !private ["CSo12UIStoryboard", "init"]
 - !private ["CSo12UIStoryboard", "instantiateInitialViewController"]
 - !private ["CSo18UITabBarController", "TestController"]
@@ -205,14 +177,14 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "UIStoryboard"]
 - !private ["PSo16UITabBarDelegate", "init"]
 - !private ["PSo16UITabBarDelegate", "setViewControllers"]
-- ["PSo16UITabBarDelegate", "viewDidLoad"]
+- !private ["PSo16UITabBarDelegate", "viewDidLoad"]
 - ["PSo16UITabBarDelegate", ""]
 - !private ["PSo18UITraitEnvironment", "UIStoryboard"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "labelText"]
 - !private ["PSo18UITraitEnvironment", "setViewControllers"]
 - !private ["PSo18UITraitEnvironment", "title"]
-- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo16UIViewController", "TestController"]
 - !private ["CSo16UIViewController", "UIStoryboard"]
@@ -221,12 +193,11 @@ depends-member:
 - !private ["CSo16UIViewController", "setViewControllers"]
 - !private ["CSo16UIViewController", "title"]
 - ["CSo16UIViewController", "viewDidLoad"]
-- !private ["Ps14_ArrayProtocol", "Element"]
-- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "UIStoryboard"]
 - !private ["Ps9_Hashable", "init"]
@@ -234,40 +205,26 @@ depends-member:
 - !private ["Ps9_Hashable", "labelText"]
 - !private ["Ps9_Hashable", "setViewControllers"]
 - !private ["Ps9_Hashable", "title"]
-- ["Ps9_Hashable", "viewDidLoad"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "C12DrawerSample17AccountController"
 - "Ps9AnyObject"
-- "Sa"
-- !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
-- "Sb"
 - "Ps7CVarArg"
-- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- !private "SQ"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - "C12DrawerSample18MobilityController"
-- !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
-- "CSo7NSCoder"
 - "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
@@ -276,14 +233,8 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Sq"
-- !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
-- !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
-- !private "Ps8Sequence"
-- "SS"
-- "C12DrawerSample14TestController"
+- !private "SS"
+- !private "C12DrawerSample14TestController"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "PSo21UIAppearanceContainer"
@@ -292,30 +243,35 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
-- "CSo12UIStoryboard"
+- !private "CSo12UIStoryboard"
 - "CSo18UITabBarController"
 - "PSo16UITabBarDelegate"
 - "PSo18UITraitEnvironment"
 - "CSo16UIViewController"
-- !private "Ps14_ArrayProtocol"
-- !private "Ps24_DestructorSafeContainer"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 interface-hash: "5f579692a88e269673f0863e38abab0d"

@@ -11,7 +11,7 @@ internal class DrawerMenu: CustomView {
     
     // MARK: outlets
     
-    @IBOutlet weak var menuItemContainer: UIView!
+    @IBOutlet weak var menuItemStackview: UIStackView!
     
     
     // MARK: Constructors
@@ -43,26 +43,28 @@ internal class DrawerMenu: CustomView {
         }
         
         // set up leading, trailing and top constraint for new menu item
-        let leading = NSLayoutConstraint(item: menuItem, attribute: .leading, relatedBy: .equal, toItem: menuItemContainer, attribute: .leading, multiplier: 1.0, constant: 0.0)
-        let trailing = NSLayoutConstraint(item: menuItem, attribute: .trailing, relatedBy: .equal, toItem: menuItemContainer, attribute: .trailing, multiplier: 1.0, constant: 0.0)
+        let leading = NSLayoutConstraint(item: menuItem, attribute: .leading, relatedBy: .equal, toItem: menuItemStackview, attribute: .leading, multiplier: 1.0, constant: 0.0)
+        let trailing = NSLayoutConstraint(item: menuItem, attribute: .trailing, relatedBy: .equal, toItem: menuItemStackview, attribute: .trailing, multiplier: 1.0, constant: 0.0)
         let height = NSLayoutConstraint(item: menuItem, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1.0, constant: 60.0)
-        var top = NSLayoutConstraint(item: menuItem, attribute: .top, relatedBy: .equal, toItem: menuItemContainer, attribute: .top, multiplier: 1.0, constant: 8.0)
-        
+//        var top = NSLayoutConstraint(item: menuItem, attribute: .top, relatedBy: .equal, toItem: menuItemContainer, attribute: .top, multiplier: 1.0, constant: 8.0)
+//        
         // get previously added menu item
-        if let previousMenuItem = menuItemContainer.subviews.last {
-            
-            // anchor top to bottom of previous menu item
-            top = NSLayoutConstraint(item: menuItem, attribute: .top, relatedBy: .equal, toItem: previousMenuItem, attribute: .bottom, multiplier: 1.0, constant: 8.0)
-        }
+//        if let previousMenuItem = menuItemContainer.subviews.last {
+//            
+//            // anchor top to bottom of previous menu item
+//            top = NSLayoutConstraint(item: menuItem, attribute: .top, relatedBy: .equal, toItem: previousMenuItem, attribute: .bottom, multiplier: 1.0, constant: 8.0)
+//        }
         
         // add new menu item to container
         if let menuItemView = menuItem as? UIView {
             
-            menuItemView.translatesAutoresizingMaskIntoConstraints = false
-            menuItemContainer.addSubview(menuItemView)
+            menuItemStackview.addArrangedSubview(menuItemView)
+            menuItemStackview.addConstraints([height, leading, trailing])
             
-            // add constraints to menu item
-            menuItemContainer.addConstraints([leading, trailing, top, height])
+//            menuItemView.translatesAutoresizingMaskIntoConstraints = false
+//            menuItemContainer.addSubview(menuItemView)
+//            
+//            // add constraints to menu item
         }
     }
 }

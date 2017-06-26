@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="button_primary" value="#ffff00ff" />
+    <insets name="default_padding" value="4,4,4,4" />
+    <dimension name="default_height" value="44" />
+
+    <style name="button_primary" target="Button">
+        <setter property="backgroundColor" value="" />
+        <item name="fontSize">18</item>
+        <item name="color">#000</item>
+        <item name="contentInsets">0, 0, 0, 0</item>
+    </style>
+
+<style name="button_secondary" parent="button_primary">
+
+</style>
+</resources>

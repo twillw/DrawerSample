@@ -32,11 +32,18 @@ internal class DrawerCoordinatorController: UIViewController, UIGestureRecognize
         // initialize drawer menu
         initializeDrawer()
         
-        // add accounts
-        let account1 = Account(ban: "12345", name: "First Jimmy", type: .Mobility)
-        let account2 = Account(ban: "67890", name: "Second Jimmy", type: .HomeSolutions)
         
-        addAccounts(accounts: [account1, account2])
+        // TODO: these will be added externally
+        var accounts = [Account]()
+        // add accounts
+        for i in 1..<20 {
+            
+            let account1 = Account(ban: "12345", name: "\(i) Jimmy", type: .Mobility)
+//            let account2 = Account(ban: "67890", name: "Second Jimmy", type: .HomeSolutions)
+            accounts.append(account1)
+        }
+        
+        addAccounts(accounts: accounts)
         
         // select first item by default
         setDefaultController()
