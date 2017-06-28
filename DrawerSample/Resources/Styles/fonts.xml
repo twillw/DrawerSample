@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <font name="display" fontName="HelveticaNeue-Light" size="28" />
+    <font name="heading_1" fontName="HelveticaNeue-Light" size="24" />
+    <font name="heading_2" fontName="HelveticaNeue" size="20" />
+    <font name="body_regular" fontName="HelveticaNeue" size="16" />
+    <font name="body_small" fontName="HelveticaNeue" size="16" />
+    
+    <font name="button_primary" fontName="HelveticaNeue" size="16" />
+</resources>

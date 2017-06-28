@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="button_primary" value="#ffff00ff" />
-    <insets name="default_padding" value="4,4,4,4" />
-    <dimension name="default_height" value="44" />
+    <!--<color name="button_primary" value="#ffff00" />-->
+    <!--<insets name="default_padding" value="4,4,4,4" />-->
+    <!--<dimension name="default_height" value="44" />-->
+    <font name="button_primary" fontName="HelveticaNeueLTStd-Roman" size="18" />
 
-    <style name="button_primary" target="Button">
-        <setter property="backgroundColor" value="" />
-        <item name="fontSize">18</item>
-        <item name="color">#000</item>
-        <item name="contentInsets">0, 0, 0, 0</item>
+    <style name="button_primary" target="UIButton">
+        <setter property="backgroundColor" value="#000000" />
+        <setter property="titleLabel.font" referenceType="font" reference="button_primary" />
+        <setter property="contentEdgeInsets" value="0,0,0,0" />
+        <setter property="tintColor" value="#000000" />
+        <setter property="heightAnchor" referenceType="dimension" reference="default_button_height" />
     </style>
 
-<style name="button_secondary" parent="button_primary">
-
-</style>
+    <style name="button_secondary" parent="button_primary" target="UIButton">
+        <setter property="backgroundColor" value="#ffffff" />
+        <setter property="titleLabel.font" referenceType="font" reference="button_primary" />
+        <setter property="contentEdgeInsets" value="0,0,0,0" />
+        <setter property="tintColor" value="#000000" />
+    </style>
 </resources>

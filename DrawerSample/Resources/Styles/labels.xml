@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="label_display" target="UILabel">
+        <setter property="font" referenceType="font" reference="display" />
+        <setter property="textColor" value="rgba(75,40,109,1)" />
+    </style>
+    
+    <style name="label_heading_1" target="UILabel">
+        <setter property="font" referenceType="font" reference="heading_1" />
+        <setter property="textColor" value="rgba(75,40,109,1)" />
+    </style>
+    
+    <style name="label_heading_2" target="UILabel">
+        <setter property="font" referenceType="font" reference="heading_2" />
+        <setter property="textColor" referenceType="color" reference="primary_purple" />
+    </style>
+
+</resources>

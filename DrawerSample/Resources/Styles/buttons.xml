@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<insets name="default_padding" value="4,4,4,4" />-->
+
+    <style name="button_primary" target="UIButton">
+        <setter property="backgroundColor" referenceType="color" reference="primary_green" />
+        <setter property="titleLabel?.font" referenceType="font" reference="button_primary" />
+        <setter property="contentEdgeInsets" value="6,6,6,6" />
+        <setter property="tintColor" value="#ffffff" />
+        <setter property="layer.cornerRadius" value="5" />
+        
+        <method property="heightAnchor" value="44.0" />
+    </style>
+
+    <style name="button_secondary" parent="button_primary" target="UIButton">
+        <setter property="backgroundColor" referenceType="color" reference="primary_purple" />
+        <setter property="titleLabel?.font" referenceType="font" reference="button_primary" />
+        <setter property="contentEdgeInsets" value="6,6,6,6" />
+        <setter property="tintColor" value="#ffffff" />
+        <setter property="layer.cornerRadius" value="5" />
+    </style>
+</resources>

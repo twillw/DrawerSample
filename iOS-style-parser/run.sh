@@ -1,4 +1,7 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-# TODO: fix this node reference:
-/Users/tomwark/.nvm/versions/node/v6.8.0/bin/node ./iOS-style-parser/index.js
+NODE="$(which node)"
+echo "NODE"
+echo $NODE
+
+$NODE ./iOS-style-parser/index.js $1 $2

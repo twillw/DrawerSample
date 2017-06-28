@@ -1,12 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 const parseString = require('xml2js').parseString;
+const SwiftClassGenerator = require('./swift-code-creation/SwiftClassGenerator');
 
-const SwiftClassGenerator = require('./SwiftClassGenerator');
+const readStyleXml = function(filePath) {
 
-const readStyleXml = (fileName) => {
-
-  return new Promise((resolve, reject) => {
-    fs.readFile(__dirname + `/styles/${fileName}`, function (err, data) {
+  return new Promise(function(resolve, reject) {
+    fs.readFile(filePath, function (err, data) {
 
       if (err) {
         console.log(err);
@@ -18,23 +18,42 @@ const readStyleXml = (fileName) => {
           return reject(err);
         }
 
-        console.dir(result);
-        console.log(result.resources.style);
-        console.log('Done');
-        return resolve(result);
+        const filePathParts = filePath.split('/');
+        const fileName = filePathParts[filePathParts.length - 1];
+        return resolve(result.resources, fileName);
       });
     });
   });
 };
 
-const generateSwiftClass = (styleObject) => {
+const evaluateStyles = function(stylesDirectory, outputDirectory) {
 
-  // create file generator
-  const generator = new SwiftClassGenerator('TestClass');
+  fs.readdir(stylesDirectory, function (err, files) {
 
-  // create new swift class file
-  generator.createFile();
+    const fileName = 'Style';
+    const generator = new SwiftClassGenerator(fileName, outputDirectory);
+
+    // iterate over files and load style data for each
+    Promise.all(files.map(function (file) {
+
+        console.log('FILE');
+        console.log(file);
+        return readStyleXml(path.join(stylesDirectory, file))
+          .then((data) => generator.loadStyles(data))
+      })
+    )
+    .then(() => generator.createFile())
+    .catch((e) => {
+      console.log(e);
+      throw e;
+    });
+  });
 };
 
-readStyleXml('sample.xml')
-  .then(generateSwiftClass);
+// first argument is output directory
+const stylesDirectory = process.argv[2] || (__dirname + '/styles');
+const outputDirectory = process.argv[3];
+
+evaluateStyles(stylesDirectory, outputDirectory);
+
+

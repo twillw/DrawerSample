@@ -20,11 +20,16 @@
 		491FFF311EEF357600DC2386 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491FFF2F1EEF357600DC2386 /* AccountController.swift */; };
 		491FFF321EEF357600DC2386 /* MobilityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491FFF301EEF357600DC2386 /* MobilityController.swift */; };
 		491FFF341EEF358C00DC2386 /* HomeSolutionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491FFF331EEF358C00DC2386 /* HomeSolutionsController.swift */; };
-		491FFF391EF0571200DC2386 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491FFF381EF0571200DC2386 /* Style.swift */; };
-		491FFF3B1EF0572900DC2386 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491FFF3A1EF0572900DC2386 /* ButtonStyle.swift */; };
 		49473DFA1EE5EB0000E0A8B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49473DF91EE5EB0000E0A8B1 /* AppDelegate.swift */; };
 		49473E011EE5EB0000E0A8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49473E001EE5EB0000E0A8B1 /* Assets.xcassets */; };
 		49473E041EE5EB0000E0A8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49473E021EE5EB0000E0A8B1 /* LaunchScreen.storyboard */; };
+		49A00AF31F02E436005B75AD /* buttons.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00AF21F02E436005B75AD /* buttons.xml */; };
+		49A00B031F02F73E005B75AD /* UIView+styleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A00B021F02F73E005B75AD /* UIView+styleExtension.swift */; };
+		49A00B051F03000E005B75AD /* labels.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B041F03000E005B75AD /* labels.xml */; };
+		49A00B071F0300CA005B75AD /* fonts.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B061F0300CA005B75AD /* fonts.xml */; };
+		49A00B091F0304A5005B75AD /* colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B081F0304A5005B75AD /* colors.xml */; };
+		49A00B171F03F9AA005B75AD /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A00B161F03F9AA005B75AD /* Style.swift */; };
+		49A00B191F042DEB005B75AD /* dimensions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B181F042DEB005B75AD /* dimensions.xml */; };
 		49FD3DC71EFDADD200C4CBA7 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD3DC61EFDADD200C4CBA7 /* ListController.swift */; };
 		49FD3DC91EFDADFF00C4CBA7 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD3DC81EFDADFF00C4CBA7 /* ListItem.swift */; };
 		49FD3DCB1EFDAEA200C4CBA7 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD3DCA1EFDAEA200C4CBA7 /* ListItemCell.swift */; };
@@ -49,13 +54,18 @@
 		491FFF2F1EEF357600DC2386 /* AccountController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
 		491FFF301EEF357600DC2386 /* MobilityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilityController.swift; sourceTree = "<group>"; };
 		491FFF331EEF358C00DC2386 /* HomeSolutionsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSolutionsController.swift; sourceTree = "<group>"; };
-		491FFF381EF0571200DC2386 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		491FFF3A1EF0572900DC2386 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		49473DF61EE5EB0000E0A8B1 /* DrawerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49473DF91EE5EB0000E0A8B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49473E001EE5EB0000E0A8B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49473E031EE5EB0000E0A8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49473E051EE5EB0000E0A8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A00AF21F02E436005B75AD /* buttons.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = buttons.xml; sourceTree = "<group>"; };
+		49A00B021F02F73E005B75AD /* UIView+styleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+styleExtension.swift"; sourceTree = "<group>"; };
+		49A00B041F03000E005B75AD /* labels.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = labels.xml; sourceTree = "<group>"; };
+		49A00B061F0300CA005B75AD /* fonts.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fonts.xml; sourceTree = "<group>"; };
+		49A00B081F0304A5005B75AD /* colors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
+		49A00B161F03F9AA005B75AD /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		49A00B181F042DEB005B75AD /* dimensions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dimensions.xml; sourceTree = "<group>"; };
 		49FD3DC61EFDADD200C4CBA7 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		49FD3DC81EFDADFF00C4CBA7 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		49FD3DCA1EFDAEA200C4CBA7 /* ListItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
@@ -125,15 +135,6 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
-		491FFF371EF0571200DC2386 /* Styles */ = {
-			isa = PBXGroup;
-			children = (
-				491FFF381EF0571200DC2386 /* Style.swift */,
-				491FFF3A1EF0572900DC2386 /* ButtonStyle.swift */,
-			);
-			path = Styles;
-			sourceTree = "<group>";
-		};
 		49473DED1EE5EB0000E0A8B1 = {
 			isa = PBXGroup;
 			children = (
@@ -161,9 +162,47 @@
 				49473E051EE5EB0000E0A8B1 /* Info.plist */,
 				491FFEF91EE8711A00DC2386 /* Controllers */,
 				491FFF091EE8715E00DC2386 /* Views */,
-				491FFF371EF0571200DC2386 /* Styles */,
+				49A00AF01F02E407005B75AD /* Resources */,
 			);
 			path = DrawerSample;
+			sourceTree = "<group>";
+		};
+		49A00AF01F02E407005B75AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49A00B131F03F903005B75AD /* Generated-Styles */,
+				49A00B011F02F720005B75AD /* StyleHelpers */,
+				49A00AF11F02E407005B75AD /* Styles */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49A00AF11F02E407005B75AD /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				49A00B081F0304A5005B75AD /* colors.xml */,
+				49A00B181F042DEB005B75AD /* dimensions.xml */,
+				49A00B061F0300CA005B75AD /* fonts.xml */,
+				49A00B041F03000E005B75AD /* labels.xml */,
+				49A00AF21F02E436005B75AD /* buttons.xml */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		49A00B011F02F720005B75AD /* StyleHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				49A00B021F02F73E005B75AD /* UIView+styleExtension.swift */,
+			);
+			path = StyleHelpers;
+			sourceTree = "<group>";
+		};
+		49A00B131F03F903005B75AD /* Generated-Styles */ = {
+			isa = PBXGroup;
+			children = (
+				49A00B161F03F9AA005B75AD /* Style.swift */,
+			);
+			path = "Generated-Styles";
 			sourceTree = "<group>";
 		};
 		49FD3DC51EFDADD200C4CBA7 /* List */ = {
@@ -200,11 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49473E081EE5EB0000E0A8B1 /* Build configuration list for PBXNativeTarget "DrawerSample" */;
 			buildPhases = (
+				49FD3DD21F02DB8400C4CBA7 /* ShellScript */,
 				E953DEEE6BEFD7ABF61EE679 /* [CP] Check Pods Manifest.lock */,
 				49473DF21EE5EB0000E0A8B1 /* Sources */,
 				49473DF31EE5EB0000E0A8B1 /* Frameworks */,
 				49473DF41EE5EB0000E0A8B1 /* Resources */,
-				491FFF3C1EF0731E00DC2386 /* ShellScript */,
 				40E234AF9DEBC3530DE9A960 /* [CP] Embed Pods Frameworks */,
 				DC4BB548D279CCBAC4E21088 /* [CP] Copy Pods Resources */,
 			);
@@ -257,9 +296,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A00B191F042DEB005B75AD /* dimensions.xml in Resources */,
+				49A00B051F03000E005B75AD /* labels.xml in Resources */,
+				49A00B091F0304A5005B75AD /* colors.xml in Resources */,
 				49473E041EE5EB0000E0A8B1 /* LaunchScreen.storyboard in Resources */,
 				491FFF151EE8715E00DC2386 /* Main.storyboard in Resources */,
 				491FFF141EE8715E00DC2386 /* DrawerMenu.xib in Resources */,
+				49A00AF31F02E436005B75AD /* buttons.xml in Resources */,
+				49A00B071F0300CA005B75AD /* fonts.xml in Resources */,
 				491FFF291EEF2F6200DC2386 /* AccountMenuItem.xib in Resources */,
 				491FFF221EEED1FD00DC2386 /* Test.storyboard in Resources */,
 				49473E011EE5EB0000E0A8B1 /* Assets.xcassets in Resources */,
@@ -284,7 +328,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrawerSample/Pods-DrawerSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		491FFF3C1EF0731E00DC2386 /* ShellScript */ = {
+		49FD3DD21F02DB8400C4CBA7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,10 +336,11 @@
 			inputPaths = (
 			);
 			outputPaths = (
+				"$(SRCROOT)/DrawerSample/Resources/Generated-Styles/Style.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/iOS-style-parser/run.sh";
+			shellScript = "${SRCROOT}/iOS-style-parser/run.sh ${SRCROOT}/DrawerSample/Resources/Styles ${SRCROOT}/DrawerSample/Resources/Generated-Styles";
 		};
 		DC4BB548D279CCBAC4E21088 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -341,15 +386,15 @@
 				491FFF131EE8715E00DC2386 /* DrawerMenu.swift in Sources */,
 				491FFF121EE8715E00DC2386 /* CustomView.swift in Sources */,
 				491FFF201EEED1E200DC2386 /* TestController.swift in Sources */,
+				49A00B171F03F9AA005B75AD /* Style.swift in Sources */,
 				491FFEFD1EE8711A00DC2386 /* DrawerCoordinatorController.swift in Sources */,
-				491FFF391EF0571200DC2386 /* Style.swift in Sources */,
 				49FD3DCF1F0175FF00C4CBA7 /* TestListItem.swift in Sources */,
 				49FD3DD11F01761B00C4CBA7 /* TestListItemCell.swift in Sources */,
 				49FD3DC91EFDADFF00C4CBA7 /* ListItem.swift in Sources */,
 				491FFF311EEF357600DC2386 /* AccountController.swift in Sources */,
-				491FFF3B1EF0572900DC2386 /* ButtonStyle.swift in Sources */,
 				491FFF2B1EEF2FD200DC2386 /* MenuItem.swift in Sources */,
 				491FFF321EEF357600DC2386 /* MobilityController.swift in Sources */,
+				49A00B031F02F73E005B75AD /* UIView+styleExtension.swift in Sources */,
 				49FD3DC71EFDADD200C4CBA7 /* ListController.swift in Sources */,
 				49FD3DCB1EFDAEA200C4CBA7 /* ListItemCell.swift in Sources */,
 			);
