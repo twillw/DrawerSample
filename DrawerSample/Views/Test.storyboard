@@ -40,19 +40,12 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="nicknameText" value="Foo"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-pZ-ngC">
-                                <rect key="frame" x="0.0" y="455" width="375" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4J-pZ-ngC" customClass="Button" customModule="DrawerSample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="455" width="375" height="44"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="style" value="button_primary"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.18823529410000001" green="0.37847148310000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
@@ -60,8 +53,11 @@
                         <constraints>
                             <constraint firstItem="20q-II-9By" firstAttribute="top" secondItem="NeL-dd-7li" secondAttribute="bottom" constant="254" id="9xd-uv-k74"/>
                             <constraint firstAttribute="trailing" secondItem="20q-II-9By" secondAttribute="trailing" id="BiA-xJ-GTK"/>
+                            <constraint firstAttribute="trailing" secondItem="w4J-pZ-ngC" secondAttribute="trailing" id="CZa-sl-DH1"/>
                             <constraint firstItem="NeL-dd-7li" firstAttribute="top" secondItem="6GE-Au-6ax" secondAttribute="bottom" constant="8" id="IUm-g5-Ykh"/>
                             <constraint firstAttribute="trailing" secondItem="NeL-dd-7li" secondAttribute="trailing" constant="16" id="JPF-dc-wSh"/>
+                            <constraint firstItem="w4J-pZ-ngC" firstAttribute="top" secondItem="20q-II-9By" secondAttribute="bottom" constant="92" id="PnR-Kx-1RO"/>
+                            <constraint firstItem="w4J-pZ-ngC" firstAttribute="leading" secondItem="die-W3-xgg" secondAttribute="leading" id="XlG-Hr-u9o"/>
                             <constraint firstItem="20q-II-9By" firstAttribute="leading" secondItem="die-W3-xgg" secondAttribute="leading" id="cYQ-mf-hh3"/>
                             <constraint firstItem="NeL-dd-7li" firstAttribute="leading" secondItem="die-W3-xgg" secondAttribute="leading" constant="16" id="hgQ-5H-vDo"/>
                         </constraints>
@@ -94,7 +90,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gYN-fb-xGE" id="fpW-nH-RzT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>

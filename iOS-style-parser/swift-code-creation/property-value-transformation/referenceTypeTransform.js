@@ -7,9 +7,11 @@ module.exports = {
   },
 
   'color': function (refData) {
-    console.log('COLOR REF DATA');
-    console.log(refData);
     return color.fromString(refData.$.value);
+  },
+
+  'cg-color': function (refData) {
+    return `${color.fromString(refData.$.value)}.cgColor`
   },
 
   'dimension': function (refData) {

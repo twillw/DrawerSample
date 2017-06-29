@@ -24,12 +24,12 @@
 		49473E011EE5EB0000E0A8B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49473E001EE5EB0000E0A8B1 /* Assets.xcassets */; };
 		49473E041EE5EB0000E0A8B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49473E021EE5EB0000E0A8B1 /* LaunchScreen.storyboard */; };
 		49A00AF31F02E436005B75AD /* buttons.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00AF21F02E436005B75AD /* buttons.xml */; };
-		49A00B031F02F73E005B75AD /* UIView+styleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A00B021F02F73E005B75AD /* UIView+styleExtension.swift */; };
 		49A00B051F03000E005B75AD /* labels.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B041F03000E005B75AD /* labels.xml */; };
 		49A00B071F0300CA005B75AD /* fonts.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B061F0300CA005B75AD /* fonts.xml */; };
 		49A00B091F0304A5005B75AD /* colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B081F0304A5005B75AD /* colors.xml */; };
 		49A00B171F03F9AA005B75AD /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A00B161F03F9AA005B75AD /* Style.swift */; };
 		49A00B191F042DEB005B75AD /* dimensions.xml in Resources */ = {isa = PBXBuildFile; fileRef = 49A00B181F042DEB005B75AD /* dimensions.xml */; };
+		49A00B1B1F043E13005B75AD /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A00B1A1F043E13005B75AD /* Button.swift */; };
 		49FD3DC71EFDADD200C4CBA7 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD3DC61EFDADD200C4CBA7 /* ListController.swift */; };
 		49FD3DC91EFDADFF00C4CBA7 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD3DC81EFDADFF00C4CBA7 /* ListItem.swift */; };
 		49FD3DCB1EFDAEA200C4CBA7 /* ListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD3DCA1EFDAEA200C4CBA7 /* ListItemCell.swift */; };
@@ -60,12 +60,12 @@
 		49473E031EE5EB0000E0A8B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49473E051EE5EB0000E0A8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49A00AF21F02E436005B75AD /* buttons.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = buttons.xml; sourceTree = "<group>"; };
-		49A00B021F02F73E005B75AD /* UIView+styleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+styleExtension.swift"; sourceTree = "<group>"; };
 		49A00B041F03000E005B75AD /* labels.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = labels.xml; sourceTree = "<group>"; };
 		49A00B061F0300CA005B75AD /* fonts.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = fonts.xml; sourceTree = "<group>"; };
 		49A00B081F0304A5005B75AD /* colors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
 		49A00B161F03F9AA005B75AD /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		49A00B181F042DEB005B75AD /* dimensions.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dimensions.xml; sourceTree = "<group>"; };
+		49A00B1A1F043E13005B75AD /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		49FD3DC61EFDADD200C4CBA7 /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		49FD3DC81EFDADFF00C4CBA7 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		49FD3DCA1EFDAEA200C4CBA7 /* ListItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItemCell.swift; sourceTree = "<group>"; };
@@ -105,6 +105,7 @@
 		491FFF091EE8715E00DC2386 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49A00B1C1F045004005B75AD /* Base */,
 				491FFF0B1EE8715E00DC2386 /* CustomView.swift */,
 				491FFF0C1EE8715E00DC2386 /* DrawerMenu.swift */,
 				491FFF0D1EE8715E00DC2386 /* DrawerMenu.xib */,
@@ -163,6 +164,7 @@
 				491FFEF91EE8711A00DC2386 /* Controllers */,
 				491FFF091EE8715E00DC2386 /* Views */,
 				49A00AF01F02E407005B75AD /* Resources */,
+				49A00B1A1F043E13005B75AD /* Button.swift */,
 			);
 			path = DrawerSample;
 			sourceTree = "<group>";
@@ -171,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				49A00B131F03F903005B75AD /* Generated-Styles */,
-				49A00B011F02F720005B75AD /* StyleHelpers */,
 				49A00AF11F02E407005B75AD /* Styles */,
 			);
 			path = Resources;
@@ -189,20 +190,19 @@
 			path = Styles;
 			sourceTree = "<group>";
 		};
-		49A00B011F02F720005B75AD /* StyleHelpers */ = {
-			isa = PBXGroup;
-			children = (
-				49A00B021F02F73E005B75AD /* UIView+styleExtension.swift */,
-			);
-			path = StyleHelpers;
-			sourceTree = "<group>";
-		};
 		49A00B131F03F903005B75AD /* Generated-Styles */ = {
 			isa = PBXGroup;
 			children = (
 				49A00B161F03F9AA005B75AD /* Style.swift */,
 			);
 			path = "Generated-Styles";
+			sourceTree = "<group>";
+		};
+		49A00B1C1F045004005B75AD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		49FD3DC51EFDADD200C4CBA7 /* List */ = {
@@ -334,6 +334,7 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/DrawerSample/Resources/Styles/buttons.xml",
 			);
 			outputPaths = (
 				"$(SRCROOT)/DrawerSample/Resources/Generated-Styles/Style.swift",
@@ -384,6 +385,7 @@
 				49473DFA1EE5EB0000E0A8B1 /* AppDelegate.swift in Sources */,
 				49FD3DCD1F01757000C4CBA7 /* TestListController.swift in Sources */,
 				491FFF131EE8715E00DC2386 /* DrawerMenu.swift in Sources */,
+				49A00B1B1F043E13005B75AD /* Button.swift in Sources */,
 				491FFF121EE8715E00DC2386 /* CustomView.swift in Sources */,
 				491FFF201EEED1E200DC2386 /* TestController.swift in Sources */,
 				49A00B171F03F9AA005B75AD /* Style.swift in Sources */,
@@ -394,7 +396,6 @@
 				491FFF311EEF357600DC2386 /* AccountController.swift in Sources */,
 				491FFF2B1EEF2FD200DC2386 /* MenuItem.swift in Sources */,
 				491FFF321EEF357600DC2386 /* MobilityController.swift in Sources */,
-				49A00B031F02F73E005B75AD /* UIView+styleExtension.swift in Sources */,
 				49FD3DC71EFDADD200C4CBA7 /* ListController.swift in Sources */,
 				49FD3DCB1EFDAEA200C4CBA7 /* ListItemCell.swift in Sources */,
 			);

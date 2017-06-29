@@ -30,6 +30,17 @@ internal class DrawerMenu: CustomView {
     
     internal func addMenuItem(_ account: Account, type: MenuItemType, onSelection action: @escaping (MenuItemType) -> Void) {
         
+        
+//        layer.shadowColor
+//        layer.shadowOffset
+//        layer.shadowRadius
+//        
+//        /* offset-x | offset-y | blur-radius | spread-radius | color */
+//        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+        
+        
+        
         // TODO: add other menu item types
         // create new menu item view
         var menuItem: MenuItem!

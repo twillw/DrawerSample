@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    
+    <!-- High level typography -->
 
     <style name="label_display" target="UILabel">
         <setter property="font" referenceType="font" reference="display" />
@@ -14,6 +16,11 @@
     <style name="label_heading_2" target="UILabel">
         <setter property="font" referenceType="font" reference="heading_2" />
         <setter property="textColor" referenceType="color" reference="primary_purple" />
+    </style>
+    
+    <style name="small_body" target="UILabel">
+        <setter property="font" referenceType="font" reference="small_body" />
+        <setter property="textColor" referenceType="color" reference="primary_text" />
     </style>
 
 </resources>

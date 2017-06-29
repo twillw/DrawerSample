@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="primary_purple" value="rgba(75,40,109,1)" />
-    <color name="primary_green" value="rgba(36,135,0,1)" />
+    <!-- Background colors -->
+
+    <color name="primary_background" value="rgba(36,135,0,1)" />
+    <color name="secondary_background" value="rgba(75,40,109,1)" />
+    
+    <!-- shadow color -->
+    
+    <cg-color name="default_shadow" value="rgba(216,216,216,1)" />
+    
+    
+    <!-- Typography colors -->
+    
+    <color name="primary_text" value="rgba(36,135,0,1)" />
 
 </resources>
